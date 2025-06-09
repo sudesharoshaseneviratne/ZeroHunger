@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(205, 250, 255);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{ 
+    padding: 10px;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.div1{
+    background-color: aliceblue;
+    height: 89px;
+    text-align: center;
+    padding: 5px;
+
+    
+}
+p{
+    text-align: center;
+    padding: 5px;
+   width: 500px;
+   margin-left: 34%;
+   font-weight: 600;
+}
+
+.a1{
+    margin-left: 46%;
+    color: black;
+    margin-top: 10px;
+}
+
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.text1 {
+    margin-top: 20px;
+    
+}
+
+.footer {
+    margin-top: 20px;
+}

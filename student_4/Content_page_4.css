@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(180deg, #04ff0090, #ffff0090, #ff000090);
+}
+
+.div1 {
+    margin: 100px auto;
+    width: 85%;
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+    margin-left: 210px;
+    width: 700px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+strong {
+    font-size: 30px;
+}
+
+p {
+    font-size: 25px;
+    text-align: justify;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pic1 {
+    height: 300px;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.pic2 {
+    height: 300px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+
+.bg {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 40px 40px 40px 40px;
+}
+
+.footer {
+    margin-top: 50px;
+}

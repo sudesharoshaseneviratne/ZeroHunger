@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../student_2/feedback.css">
+    <link rel="stylesheet" href="../student_2/Footer.css">
+    <link rel="stylesheet" href="../student_2/navbar.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="Home.html">End Hunger</a>
+        </div>
+    
+        <ul>
+            <li class="hideOnMobile"><a href="Home.html">Home</a></li>
+            <li class="hideOnMobile"><a href="../student_4/Gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="../student_1/Shop.html">Shop</a></li>
+            <li class="hideOnMobile"><a href="../student_4/Sitemap.html">Site map</a></li>
+            <li class="hideOnMobile"><a href="../student_3/AboutUs.html">About us</a></li>
+            <li class="hideOnMobile"><a href="../student_2/Feedback.html">Feedback</a></li>
+            <li class="hideOnMobile"><a href="../student_3/Userprofile.html">User Profile</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+            <div class="contact-title">
+                <h1>Feedback</h1>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="83ef8df6-b17c-4698-979f-4b2a3744f1cc">
+            <label class="label">Enter Your Name</label>
+            <input type="text" name="name" placeholder="Enter Name Here" class="contact-inputs" required>
+            <label class="label">Enter Your Email</label>
+            <input type="email" name="email" placeholder="Enter Email Here" class="contact-inputs" required>
+            <label class="label">Was this your first visiting?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes-1" name="Was this your first visiting?" value="yes">
+                <label class="radio-label" for="yes-1">Yes</label>
+                <input type="radio" id="no-1" name="Was this your first visiting?" value="no">
+                <label class="radio-label" for="no-1">No</label>
+            </div>
+            <label class="label">Was this website informative and easy to navigate through?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes-2" name="Was this website informative and easy to navigate through?" value="yes">
+                <label class="radio-label" for="yes-2">Yes</label>
+                <input type="radio" id="no-2" name="Was this website informative and easy to navigate through?" value="no">
+                <label class="radio-label" for="no-2">No</label>
+            </div>    
+            <label class="label">If "No",suggest any improvement for the future:</label>
+            <textarea name="suggest" placeholder="Add Your Massage Here" class="contact-inputs"></textarea>
+            <label class="label">How satisfied are you Our services? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!"</label>
+            <div class="radio-group">
+                <input type="radio" id="rating-0" name="rating" value="0">
+                <label class="radio-label" for="rating-0">0</label>
+                <input type="radio" id="rating-1" name="rating" value="1">
+                <label class="radio-label" for="rating-1">1</label>
+                <input type="radio" id="rating-2" name="rating" value="2">
+                <label class="radio-label" for="rating-2">2</label>
+                <input type="radio" id="rating-3" name="rating" value="3">
+                <label class="radio-label" for="rating-3">3</label>
+                <input type="radio" id="rating-4" name="rating" value="4">
+                <label class="radio-label" for="rating-4">4</label>
+                <input type="radio" id="rating-5" name="rating" value="5">
+                <label class="radio-label" for="rating-5">5</label>
+                <input type="radio" id="rating-6" name="rating" value="6">
+                <label class="radio-label" for="rating-6">6</label>
+                <input type="radio" id="rating-7" name="rating" value="7">
+                <label class="radio-label" for="rating-7">7</label>
+                <input type="radio" id="rating-8" name="rating" value="8">
+                <label class="radio-label" for="rating-8">8</label>
+                <input type="radio" id="rating-9" name="rating" value="9">
+                <label class="radio-label" for="rating-9">9</label>
+                <input type="radio" id="rating-10" name="rating" value="10">
+                <label class="radio-label" for="rating-10">10</label>
+              </div>
+            <label class="label">Would you recommend our services?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes-3" name="Would you recommend our services?" value="yes">
+                <label class="radio-label" for="yes-3">Yes</label>
+                <input type="radio" id="no-3" name="Would you recommend our services?" value="no">
+                <label class="radio-label" for="no-3">No</label>
+            </div>
+            <label class="label">Would you like to receive update about the website and any offers?</label>
+            <select name="Would you like to receive update about the website and any offers?" id="select">
+                <option value="yes">Yes - via Email</option>
+                <option value="no">No</option>
+            </select>
+            <label class="label">Do you have any additinal Questions or requests?</label> 
+            <textarea name="Do you have any additinal Questions or requests?" placeholder="Add Your Massage Here" class="contact-inputs" ></textarea>
+            <button type="submit">Submit<img src="arrow_icon.png"></button>
+        </form>
+    </div>
+    <br><br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="footer">
+          <div class="row">
+              <a id="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+              <a id="insta" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+              <a id="youtube" href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+              <a id="twitter" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+          </div>
+      
+          <div class="row">
+              <ul>
+                  <li><a href="#Back to TOP">Back to TOP</a></li>
+                  <li><a href="#Contact us">Contact us </a></li>
+                  <li><a href="#Privacy">Privacy Policy</a></li>
+                  <li><a href="#Terms">Terms & Conditions</a></li>
+                  <li><a href="Page_editor_1.html">Editors page</a></li>
+              </ul>
+          </div>
+      
+          <div class="row">
+              End Hunger Copyright © 2024 End Hunger - All rights reserved || Designed By: End Hunger Teams.
+          </div>
+      </div>
+      
+      </footer>
+
+</body>
+</html>

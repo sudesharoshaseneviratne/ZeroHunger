@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topimage img {
+  /* CSS properties for styling the image inside the div */
+  max-width: 100%;
+  height: auto;
+  /* Add more styles as needed */
+}
+
+
+body{
+  overflow: scroll;
+  background-color: #202020;
+} 
+
+.page-edit {
+  float: right;
+  margin-top: 3%;
+  margin-right: 3%;
+}
+
+.page-edit .drp {
+  position: relative;
+  display: inline-block;
+}
+
+.drp-btn {
+  height: 6vh;
+  width: 10vw;
+  margin-left: 5%;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: #1c1c1a;
+  transition: all 0.4s ease 0s;
+  box-shadow: 0 1px 2px 0 #BCFD4C inset, 0 1px 2px 0 #BCFD4C,
+              0 1px 2px 0 #BCFD4C inset, 0 1px 2px 0 #BCFD4C;
+}
+
+#drp-bck-color:hover #bck-drp-content{
+  display: block;
+}
+
+#drp-txt-color:hover #txt-drp-content{
+  display: block;
+}
+
+.drp-content {
+  display: none;
+  position: absolute;
+  width: 10vw;
+  margin-left: 5%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.drp-content button {
+  border: none;
+  height: 6vh;
+  width: 10vw;
+}
+
+.drp-content button:hover {
+  background-color: #ddd;
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(1, 25vh);
+  grid-template-columns: repeat(9, 10.5vw);
+  transition: all 0.3s;
+  border-radius: 10px;
+  padding: 0.25em;
+  cursor: pointer;
+  justify-content: center;
+  margin-top: 240px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.gallery img {
+  object-fit: cover;    
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.15s;
+  position: relative;
+  box-shadow: 0 0 0 #0000;
+}
+
+  
+#first-child {
+  border-radius: 10px 0 0 0;
+}
+
+#last-child {
+  border-radius: 0 0 10px 0;
+}      
+
+.EH-Name {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.EHdetails {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.EH {
+  /*glass background*/
+  box-shadow: 0 0 5px 0;
+  background: inherit;
+  backdrop-filter: blur(5px);
+  margin: 100px;
+
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #BCFD4C;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.EH-HEADER {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #BCFD4C;
+  font-size: 40px;
+}
+
+.EH-pack {
+  margin-top: 1%;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+}
+
+.EH-GALLERY {
+  margin-top: 2%;
+  display: grid;
+  grid-template-rows: repeat(1, 40vh);
+  grid-template-columns: repeat(4, 15vw);
+  grid-column-gap: 0.5%;
+  transition: all 0.3s;
+  padding: 0.25em;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.EH-GALLERY img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.15s;
+  position: relative;
+  box-shadow: 0 0 0 #0000;
+}
+
+/* /////////////////////////////////////////////modal image CSS///////////////////////////////// */
+
+/* Style the gallery images */
+.gallerymodal {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 10%;
+margin-bottom: 20%;
+}
+
+.gallerymodal img {
+width: 200px;
+height: 150px;
+margin: 6px;
+border-radius: 5px;
+cursor: pointer;
+transition: opacity 0.3s;
+}
+
+.gallerymodal img:hover {
+opacity: 0.7;
+}
+
+/* Style the modal */
+.modal {
+display: none;                        /* Hidden by default */
+position: fixed;                      /* Stay in place */
+z-index: 1;                           /* Sit on top */
+padding-top: 100px;                   /* Location of the box */
+left: 0;
+top: 0;
+width: 100%;                          /* Full width */
+height: 100%;                         /* Full height */
+overflow: auto;                       /* Enable scroll if needed */
+background-color: rgb(0,0,0);       /* Fallback color */
+background-color: rgba(0,0,0,0.9);  /* Black w/ opacity */
+z-index: 100;
+} 
+
+.modal-content {
+margin: auto;
+display: block;
+width: 60%;
+
+}
+.modal img {
+display: block;
+margin: auto;
+width: auto;
+height: 500px;
+margin-top: 10%;
+
+}
+.close {
+position: absolute;
+top: 20px;
+right: 30px;
+font-size: 30px;
+font-weight: bold;
+color: #BCFD4C;
+cursor: pointer;
+}
+
+.close:hover {
+color: white;
+}
+
+
+/* Caption of Modal Image */
+#caption {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+-webkit-animation-name: zoom;
+-webkit-animation-duration: 0.6s;
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+from {-webkit-transform:scale(0)} 
+to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+from {transform:scale(0)} 
+to {transform:scale(1)}
+}
+
+.footer {
+  margin-top: 50px;
+}

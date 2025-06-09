@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 200;
+    padding: 0;
+    min-height: 100vh;
+    position: relative; /* Add position relative to allow absolute positioning of footer */
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content-container {
+    width: 100%;
+    padding-bottom: 100px;
+    margin-top: 200px;
+    
+   
+}
+
+#container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the container */
+    margin-top: 50px; /* Adjust margin top as needed */
+    height: 400px; /* Set a fixed height for the container */
+    overflow: auto; /* Add a scrollbar when content overflows */
+    
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+button {
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa600;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #724200;
+}
+
+#progressBar {
+    width: 100%;
+    margin: 20px auto;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#progressFill {
+    background-color: #ff8800;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+#output {
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.prompt-box {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.question-number {
+    font-weight: bold;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

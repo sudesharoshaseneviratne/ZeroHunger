@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Adjusted the maximum width */
+    margin: 100px auto; /* Adjusted margin to center the container */
+    padding: 20px; /* Reduced padding */
+    background-color: rgba(255, 255, 255, 0.8); /* Made the container slightly transparent */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+h1 {
+    font-weight: 700;
+    color: #000000;
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+.contact-inputs {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: rgb(44, 44, 44);
+    border-radius: 50px;
+    box-shadow: 0 0 3px 0 #353535;
+}
+
+.contact textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #ad5f00;
+}
+
+.contact-inputs::placeholder {
+    color: #323232;
+}
+
+.contact button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #000000;
+    gap: 10px;
+    border: none;
+    background: linear-gradient(270deg, #ff9900, #fff);
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+hr {
+    width: 120px;
+    height: 8px;
+    background-color:black;
+    border-radius: 20px;
+}
+
+.label {
+    color: #000000;
+    font-weight: 900;
+}
+
+.radio-group {
+    font-family: sans-serif;
+}
+
+.contact-container input[type="radio"] {
+    display: none;
+}
+
+.radio-label {
+    font-weight: 900;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 30px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+    color: rgb(0, 0, 0);
+}
+
+.radio-label:hover {
+    background: linear-gradient(#eee, #eee) padding-box,
+        linear-gradient(to right, rgb(255, 182, 47) 0%, white 51%, rgb(255, 203, 47) 100%) border-box;
+    transition: 0.1s;
+    background-size: 200% auto;
+    border: 4px solid transparent;
+}
+
+.contact-container select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: avenir;
+    border-radius: 20px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.contact-container select:hover {
+    background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, rgb(255, 151, 47) 0%, #fffeff 51%, rgb(255, 158, 47) 100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+}
+
+.contact-container select:focus {
+    outline: none;
+    background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, rgb(255, 186, 47) 0%, #514a9d 51%, rgb(255, 220, 47) 100%) border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+}
+
+.contact-container input[type="radio"]:checked + .radio-label {
+    background-image: linear-gradient(to right, #ff0000 0%, rgb(255, 206, 47) 51%, rgb(255, 200, 47) 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(10, 10, 10);
+    color: #000000;
+}
+
+@media (max-width: 767px) {
+    .contact-container {
+        width: 95%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .contact-container label {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact-container {
+        padding: 30px;
+        height: auto;
+    }
+
+    .contact-container label {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contact-container {
+        padding: 30px;
+        height: auto;
+    }
+
+    .contact-container label {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-container {
+        padding: 40px;
+        height: auto;
+    }
+
+    .contact-container label {
+        margin-top: 20px;
+    }
+}

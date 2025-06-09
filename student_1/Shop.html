@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../student_1/css/navbar.css">
+    <link rel="stylesheet" href="../student_1/css/footer.css">
+    <link rel="stylesheet" href="Shop.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+
+
+</head>
+<body>
+    <script src="shop.js"></script>
+
+    <nav>
+      <div class="logo">
+        <a href="../student_2/Home.html">End Hunger</a>
+      </div>
+  
+      <ul>
+        <li class="hideOnMobile"><a href="../student_2/Home.html">Home</a></li>
+        <li class="hideOnMobile"><a href="../student_4/Gallery.html">Gallery</a></li>
+        <li class="hideOnMobile"><a href="../student_1/Shop.html">Shop</a></li>
+        <li class="hideOnMobile"><a href="../student_4/Sitemap.html">Site map</a></li>
+        <li class="hideOnMobile"><a href="../student_3/AboutUs.html">About us</a></li>
+        <li class="hideOnMobile"><a href="../student_2/Feedback.html">Feedback</a></li>
+        <li class="hideOnMobile"><a href="../student_3/Userprofile.html">User Profile</a></li>
+    </nav>
+
+    <!--added a slider--> 
+    <section id="fontfamily">
+    <div id="slider">
+        <figure>
+            <img height="400px" src="image1.jpg" alt="welcome">
+            <img height="400px" src="image2.jpg" alt="slider image 1">
+            <img height="400px" src="image3.jpg" alt="slider image 2">
+            <img height="400px" src="image4.jpg" alt="slider image 3">
+            <img height="400px" src="image1.jpg" alt="welcome">
+        </figure>
+    </div>
+    <!--This container contains a welcome message, a description and next to that 4 images with text--> 
+    <div class="container">
+        <div class="col">
+            <h1>Welcome To Our Shop!</h1>
+            <p>Welcome to our "End Hunger" Shop! Here, you'll discover a diverse range of products 
+              dedicated to supporting the global goal of ending hunger by 2030. Our curated 
+              selection of items is carefully chosen to promote sustainable food systems, raise 
+              awareness about food insecurity, and empower individuals to make a positive 
+              impact.</p>
+        </div>
+</div>
+<!--thsi section contains the products--> 
+<section id="product1" class="sectionp1">
+    <h2>Our Products.</h2><br>
+
+    <div class="pro-container">
+        <div class="pro">
+            <img src="merch1.jpg" alt="TOGETHER BAND">
+            <div class="des">
+                <span id="product1_name"><b>TOGETHER BAND</b></span><hr>
+                <h5>Goal : End Hunger <br>
+                  #TOGETHERBAND Edition</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement1()">-</button>
+                    <input type="text" class="cart-input1" value="1">
+                    <button class="cart-btn" onclick="increment1()">+</button>
+                  </div>
+                <h4 id="price_product1">$ 5</h4>
+            </div>
+            <button type="button" class="Add_to_cart1" id="Add_to_cart1" onclick="Adding_to_cart1()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="merch2.jpg" alt="SDGs Lanyard">
+            <div class="des">
+                <span id="product2_name"><b>SDGs Lanyard</b></span><hr>
+                <h5>Identify yourself with the Sustainable Development Goals. </h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement2()">-</button>
+                    <input type="text" class="cart-input2" value="1">
+                    <button class="cart-btn" onclick="increment2()">+</button>
+                  </div>
+                <h4 id="price_product2">$ 2</h4>
+            </div>
+            <button type="button" class="Add_to_cart1" id="Add_to_cart2" onclick="Adding_to_cart2()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="merch3.jpg" alt="Zero Hunger Essential T-Shirt">
+            <div class="des">
+                <span id="product3_name"><b>Zero Hunger Essential T-Shirt</b></span><hr>
+                <h5>Zero Hunger Global Goals Essential T-Shirts</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement3()">-</button>
+                    <input type="text" class="cart-input3" value="1">
+                    <button class="cart-btn" onclick="increment3()">+</button>
+                  </div>
+                <h4 id="price_product3">$ 20</h4>
+            </div>
+            <button type="button" class="Add_to_cart1" id="Add_to_cart3" onclick="Adding_to_cart3()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="merch4.jpg" alt="Organic SDGs Cap / Hat">
+            <div class="des">
+                <span id="product4_name"><b>Organic SDGs Cap / Hat</b></span><hr>
+                <h5>Promote the SDGs head-on with this stylish baseball cap.</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement4()">-</button>
+                    <input type="text" class="cart-input4" value="1">
+                    <button class="cart-btn" onclick="increment4()">+</button>
+                  </div>
+                <h4 id="price_product4">$ 14</h4>
+            </div>
+            <button type="button" class="Add_to_cart1" id="Add_to_cart4" onclick="Adding_to_cart4()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="merch5.jpg" alt="sustainable recycled bag">
+            <div class="des">
+                <span id="product5_name"><b>sustainable recycled bag</b></span><hr>
+                <h5>Zero hunger goal- sustainable goals  recycled bag</h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement5()">-</button>
+                    <input type="text" class="cart-input5" value="1">
+                    <button class="cart-btn" onclick="increment5()">+</button>
+                  </div>
+                <h4 id="price_product5">$ 8</h4>
+            </div>
+            <button type="button" class="Add_to_cart" id="Add_to_cart5" onclick="Adding_to_cart5()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="merch6.jpg" alt="SDGs Bento Lunch Box">
+            <div class="des">
+                <span id="product6_name"><b>SDGs Bento Lunch Box</b></span><hr>
+                <h5> Lunching sustainably or storing got cooler with the SDGs Bento Lunch Box! </h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement6()">-</button>
+                    <input type="text" class="cart-input6" value="1">
+                    <button class="cart-btn" onclick="increment6()">+</button>
+                  </div>
+                <h4 id="price_product6">$ 18</h4>
+            </div>
+            <button type="button" class="Add_to_cart" id="Add_to_cart6" onclick="Adding_to_cart6()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="merch7.jpg" alt="SDGs Postcards">
+            <div class="des">
+                <span id="product7_name"><b>SDGs Postcards</b></span><hr>
+                <h5> This set of thought-provoking postcards helps to spread the word with a single stamp. </h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement7()">-</button>
+                    <input type="text" class="cart-input7" value="1">
+                    <button class="cart-btn" onclick="increment7()">+</button>
+                  </div>
+                  
+                <h4 id="price_product7">$ 12</h4>
+            </div>
+            <button type="button" class="Add_to_cart" id="Add_to_cart7" onclick="Adding_to_cart7()"><b>Buy Now!</b></button>
+        </div>
+
+        <div class="pro">
+            <img src="merch8.jpg" alt="SDGs Soccer Ball">
+            <div class="des">
+                <span id="product8_name"><b>SDGs Soccer Ball</b></span><hr>
+                <h5>Get ready to help achieve the Sustainable Development Goals with playing soccer. </h5>
+                <div class="cart-quantity">
+                    <button class="cart-btn" onclick="decrement8()">-</button>
+                    <input type="text" class="cart-input8" value="1">
+                    <button class="cart-btn" onclick="increment8()">+</button>
+                  </div>
+                <h4 id="price_product8">$ 50</h4>
+            </div>
+            <button type="button" class="Add_to_cart" id="Add_to_cart8" onclick="Adding_to_cart8()"><b>Buy Now!</b></button>
+        </div>
+    </div>
+</section>
+
+<!--checkout form--> 
+<div class="container_form" id="form">
+    <form onsubmit="return validate_the_form()">
+        <div class="row_form">
+            <div class="col_form">
+                <h3 class="title">Billing address</h3>
+                <div class="inputBox">
+                    <span>Full Name :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter your name" id="fullname" required>
+                </div>
+                <div class="inputBox">
+                    <span>Email :<label style="color: red;">*</label></span>
+                    <input type="email" placeholder="Enter your email" id="email" required>
+                    
+                </div>
+                <div class="inputBox">
+                    <span>Address :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter your address" id="address" required>
+                    
+                </div>
+                <div class="inputBox">
+                    <span>Country :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter your country" id="country" required>
+                </div>
+                <div class="flex">
+                <div class="inputBox">
+                    <span>City :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="City" id="city" required>
+                </div>
+                <div class="inputBox">
+                    <span>Province :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Province" id="province" required> 
+                </div>
+                <div class="inputBox">
+                    <span >Zip code :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Zip code" id="zip" required>
+                </div>
+                </div>
+            </div>
+
+            <div class="col_form">
+                <h3 class="title">Payment Gateway</h3>
+                <div class="inputBox">
+                    <span>We Accept :</span>
+                    <img src="payments.png" alt="Cards Accepted">
+                </div>
+                <div class="inputBox">
+                    <span>Name on Card:<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter your name on card" id="name_on_card" required>
+                </div>
+                <div class="inputBox">
+                    <span>Credit card number :<label style="color: red;">*</label></span>
+                    <input type="password" placeholder="0000-0000-0000-0000" id="card_number" required>
+                </div>
+                <div class="inputBox">
+                    <span>Expiry month :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter month 01-12" id="month" required>
+                </div>
+                <div class="flex">
+                <div class="inputBox">
+                    <span>Expiry year :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="2023" id="year" required>
+                </div>
+                <div class="inputBox">
+                    <span>CVV :<label style="color: red;">*</label></span>
+                    <input type="text" placeholder="Enter CVV" id="cvv" required>
+                </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" value="checkout" class="submit-btn" id="submit"><b>Checkout</b></button>
+    </form>
+</div>
+<br>
+
+<!--cart--> 
+<div class="checkout_details" id="checkout_details">
+    <div class="col-25">
+        <div class="container2">
+            <h3>Checkout Details.</h3>
+          <h4 id="Name_of_buyer"></h4><br>
+
+          <table>
+            <tr>
+              <td>
+                <p><span id="item_1" style="color: black;"></span></p>
+              </td>
+              <td>
+                <p><span class="price" id="price_1"></span></p>
+              </td>
+              <td>
+                <button class="Clear_all" id="clear_products1" onclick="ClearAll_1()" style="display: none;">Clear product!</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span id="item_2" style="color: black;"></span></p>
+              </td>
+              <td>
+                <p><span class="price" id="price_2"></span></p>
+              </td>
+              <td>
+                <button class="Clear_all" id="clear_products2" onclick="ClearAll_2()" style="display: none;">Clear product!</button>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <p><span id="item_3" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_3"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products3" onclick="ClearAll_3()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_4" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_4"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products4" onclick="ClearAll_4()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_5" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_5"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products5" onclick="ClearAll_5()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_6" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_6"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products6" onclick="ClearAll_6()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_7" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_7"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products7" onclick="ClearAll_7()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span id="item_8" style="color: black;"></span></p>
+                </td>
+                <td>
+                  <p><span class="price" id="price_8"></span></p>
+                </td>
+                <td>
+                  <button class="Clear_all" id="clear_products8" onclick="ClearAll_8()" style="display: none;">Clear product!</button>
+                </td>
+              </tr>
+          </table>
+          <hr><br>
+          <p style="color: black;">Total Price<span class="total_price" style="color:black" id="Total_price"><b></b></span></p>
+          <button class="confirm" id="Confirm_purchase" type="button" onclick="Confirm_Purchase()">Confirm Purchase!</button>
+          <div class="time_date">
+            <br>
+            <span class="text-right" id="time"></span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+</section>
+
+
+<footer>
+  <div class="footer">
+    <div class="row">
+        <a id="facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+        <a id="instagram" href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+        <a id="Whatsapp" href="https://wa.me"><i class="fa fa-whatsapp"></i></a>
+        <a id="linkedin" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+    </div>
+
+    <div class="row">
+        <ul>
+            <li><a href="#">Back to TOP</a></li>
+            <li><a href="#">Contact us </a></li>
+            <li><a href="#Privacy">Privacy Policy</a></li>
+            <li><a href="#Terms">Terms & Conditions</a></li>
+            <li><a href="../student_1/Page_editor_1.html">Editors page</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        End Hunger Copyright © 2024 End Hunger - All rights reserved || Designed By: End Hunger Teams.
+    </div>
+</div>
+
+</footer>
+
+<script>
+  document.getElementById('time').innerHTML =Date();
+</script>
+
+</body>
+</html>

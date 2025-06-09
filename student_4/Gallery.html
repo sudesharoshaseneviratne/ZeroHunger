@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="../student_4/css/navbar.css">
+    <link rel="stylesheet" href="../student_4/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  </head>
+  <body class="gallery-Site-Map">
+    <nav>
+        <div class="logo">
+          <a href="Home.html">End Hunger</a>
+        </div>
+    
+        <ul>
+          <li class="hideOnMobile"><a href="../student_2/Home.html">Home</a></li>
+          <li class="hideOnMobile"><a href="../student_4/Gallery.html">Gallery</a></li>
+          <li class="hideOnMobile"><a href="../student_1/Shop.html">Shop</a></li>
+          <li class="hideOnMobile"><a href="../student_4/Sitemap.html">Site map</a></li>
+          <li class="hideOnMobile"><a href="../student_3/AboutUs.html">About us</a></li>
+          <li class="hideOnMobile"><a href="../student_2/Feedback.html">Feedback</a></li>
+          <li class="hideOnMobile"><a href="../student_3/Userprofile.html">User Profile</a></li>
+      </nav>
+      <br>
+
+      <div class="topimage">
+        <img src="background.jpg">
+      </div>
+
+    <!-- background color and text color change dropdowns -->
+    <div class="page-edit">
+        <!-- background color change dropdown -->
+        <div class="drp" id="drp-bck-color">
+          <button class="drp-btn">BACKGROUND</button>
+          <div id="bck-drp-content" class="drp-content">
+            <button onclick="changeBackgroundColorIntoDarkMode()">Dark Mode</button>
+            <button onclick="changeBackgroundColorIntoLightMode()">Light Mode</button>
+            <button onclick="changeBackgroundColorIntoBlueLightOffMode()">Spring Mode</button>
+          </div>
+        </div>
+        <!-- text color change dropdown -->
+        <div class="drp" id="drp-txt-color">
+          <button class="drp-btn">FONT SIZE</button>
+          <div id="txt-drp-content" class="drp-content">
+            <button  onclick="increaseFontSize()">+</button>
+            <button  onclick="decreaseFontSize()">-</button>
+            <button  onclick="currentFontSize()">default</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- gallery of the 9 pictures of topics -->
+      <section id="TextSize" style ="font-size: 16px">
+        <div class="gallery">
+
+          <figure id="Food" >
+            <img id="first-child" src="../student_4/gallery/pic1.jpeg" alt="Food" >
+            <figcaption class="EH-Name">Food</figcaption>
+          </figure>
+
+          <figure id="Famine">
+            <img src="../student_4/gallery/pic2.jpeg" alt="Famine">
+            <figcaption class="EH-Name">Famine</figcaption>
+          </figure>
+
+          <figure id="HungerandWar">
+            <img src="../student_4/gallery/pic3.jpeg" alt="Hunger and War">
+            <figcaption class="EH-Name">Hunger and War</figcaption>
+          </figure>
+
+          <figure id="Drought">
+            <img src="../student_4/gallery/pic4.jpeg" alt="Drought">
+            <figcaption class="EH-Name">Drought</figcaption>
+          </figure>
+
+          <figure id="MigrantsinItaly">
+            <img src="../student_4/gallery/pic5.jpeg" alt="Migrants in Italy">
+            <figcaption class="EH-Name">Migrants </figcaption>
+          </figure>
+
+          <figure id="FoodborneDiseases">
+            <img src="../student_4/gallery/pic6.jpg" alt="Foodborne Diseases">
+            <figcaption class="EH-Name">Foodborne Diseases</figcaption>
+          </figure>
+
+          <figure id="FoodWaste">
+            <img src="../student_4/gallery/pic7.jpeg" alt="Food Waste">
+            <figcaption class="EH-Name">Food Waste</figcaption>
+          </figure>
+
+          <figure id="WeFood">
+            <img src="../student_4/gallery/pic9.jpeg" alt="Roots of Sustainability">
+            <figcaption class="EH-Name">Roots of Sustainability<br>of Food</figcaption>
+          </figure>
+
+          <figure id="ArtAgriculture">
+            <img id="last-child" src="../student_4/gallery/pic8.jpeg" alt="The Art and Science of Agriculture">
+            <figcaption class="EH-Name">The Art and Science<br>of Agriculture</figcaption>
+          </figure>
+
+        </div>
+
+        <div id="EHFood" class="EHdetails">
+            <div class="EH">
+              <h1 class="EH-HEADER">Food</h1>
+              <p class="EH-pack">
+                Food is a fundamental requirement, containing nutrients essential for body tissue growth, repair, and maintenance. These nutrients provide energy for our bodies, measured in calories. The recommended daily caloric intake for children aged 11-14 ranges from 1,600 to 2,600 calories, with sedentary girls needing the least and active boys needing the most. Adults need between 1,800 and 3,000 calories.  
+              </p>
+              <div class="EH-GALLERY">
+                <img src="../student_4/gallery/food1.jpg" alt="food1">
+                <img src="../student_4/gallery/food2.jpg" alt="food2">
+                <img src="../student_4/gallery/food3.jpg" alt="food3">
+              </div>
+            </div>
+          </div>
+  
+
+        <div id="EHFamine" class="EHdetails">
+          <div class="EH">
+            <h1 class="EH-HEADER">Famine</h1>
+            <p class="EH-pack">
+              Famine is a widespread issue where people lack access to food due to natural disasters, human events, or warfare. Developed countries have mostly eliminated famine, but African countries are most common. In 2011, Somalia experienced a widespread famine resulting in over 250,000 deaths. Preventing famine involves supporting humanitarian relief efforts and funding programs to help local communities survive drought and other food scarcity causes.  
+            </p>
+            <div class="EH-GALLERY">
+              <img src="../student_4/gallery/famine1.jpg"   alt="famine1">
+              <img src="../student_4/gallery/famine2.jpg"   alt="famine2">
+              <img src="../student_4/gallery/famine3.jpg"   alt="famine3">
+            </div>
+          </div>
+        </div>
+
+
+        <div id="EHHungerandWar" class="EHdetails">
+          <div class="EH">
+            <h1 class="EH-HEADER">Hunger and War</h1>
+            <p class="EH-pack">
+              The United Nations Security Council has criticized the use of food insecurity and starvation as a war tactic, urging all parties to maintain food stocks, farms, markets, and distribution mechanisms. The resolution aims to address the rising number of hungry and malnourished people worldwide, which has been declining for at least two decades but began increasing after 2015. Armed conflict can cause food shortages, disrupt economic activities, and even precipitate violent political conflict.
+            </p>
+            <div class="EH-GALLERY">
+              <img src="../student_4/gallery/Hunger and War1.png" alt="Hunger and War1">
+              <img src="../student_4/gallery/Hunger and War2.jpg" alt="Hunger and War2">
+              <img src="../student_4/gallery/Hunger and War3.jpg" alt="Hunger and War3">
+            </div>
+          </div>
+        </div>
+
+
+        <div id="EHDrought" class="EHdetails">
+          <div class="EH">
+            <h1 class="EH-HEADER">Drought</h1>
+            <p class="EH-pack">
+              Droughts are periods of below-normal precipitation, causing soil moisture, groundwater, crop damage, and water shortages. They are the second-most costly weather events after hurricanes. Droughts affect people by reducing access to clean drinking water and crop growth. National Geographic Emerging Explorer Alexandra Cousteau's initiative, Blue Legacy, aims to raise awareness about water issues and protect Earth's freshwater resources.
+            </p>
+            <div class="EH-GALLERY">
+              <img src="../student_4/gallery/Drought1.jpg" alt="Drought1">
+              <img src="../student_4/gallery/Drought2.jpg" alt="Drought2">
+              <img src="../student_4/gallery/Drought3.jpeg" alt="Drought3">
+            </div>
+          </div>
+        </div>
+
+
+        <div id="EHMigrantsinItaly" class="EHdetails">
+          <div class="EH">
+            <h1 class="EH-HEADER">Migrants</h1>
+            <p class="EH-pack">
+              The UN established the Sustainable Development Goals in 2012 to tackle environmental, political, and economic issues. The UN aims to achieve 17 SDGs by 2030, with Zero Hunger as the second SDG. The initiative aims to end hunger by 2030, ensure nutritious food availability, end malnutrition, and promote sustainable agriculture.
+            </p>
+            <div class="EH-GALLERY">
+              <img src="../student_4/gallery/Migrants 1.jpg" alt="Migrants1">
+              <img src="../student_4/gallery/Migrants 2.jpg" alt="Migrants2">
+              <img src="../student_4/gallery/Migrants 3.jpg" alt="Migrants3">
+            </div>
+          </div>
+        </div>
+
+        
+        <div id="EHFoodborneDiseases" class="EHdetails">
+          <div class="EH">
+            <h1 class="EH-HEADER">Foodborne Diseases</h1>
+            <p class="EH-pack">
+              Foodborne illnesses impact millions annually, highlighting the responsibility of stakeholders like farmers, governments, food professionals, and consumers. By implementing robust practices, strict regulations, and raising awareness, these groups can mitigate the risk and protect public health.              
+            </p>
+            <div class="EH-GALLERY">
+              <img src="../student_4/gallery/Foodborne Diseases1.webp"   alt="FoodborneDiseases1">
+              <img src="../student_4/gallery/Foodborne Diseases2.jpeg"   alt="FoodborneDiseases2">
+              <img src="../student_4/gallery/Foodborne Diseases3.jpg"    alt="FoodborneDiseases3">
+            </div>
+          </div>
+        </div>
+
+        
+        <div id="EHFoodWaste" class="EHdetails">
+          <div class="EH">
+            <h1 class="EH-HEADER">Food Waste</h1>
+            <p class="EH-pack">
+              Tristram Stuart, an author and National Geographic Explorer, explores the complex relationship with food, revealing that over 30% of it ends up wasted. Stuart challenges our perceptions of expiration dates and offers solutions for a sustainable planet.
+            </p>
+            <div class="EH-GALLERY">
+              <img src="../student_4/gallery/food waste1.jpg" alt="FoodWaste1">
+              <img src="../student_4/gallery/food waste2.jpg"  alt="FoodWaste2">
+              <img src="../student_4/gallery/food waste3.jpg" alt="FoodWaste3">
+            </div>
+          </div>
+        </div>
+
+
+        <div id="EHWeFood" class="EHdetails">
+          <div class="EH">
+            <h1 class="EH-HEADER">The Art and Science of Agriculture</h1>
+            <p class="EH-pack">
+              Agriculture is the science of cultivating soil, growing crops, and raising livestock, providing food, fabrics, wood, and paper products. It began around 10,000-12,000 years ago and has evolved over time, with domestication of animals and plants for human use. Agriculture enabled people to produce surplus food, maintain permanent villages, and develop new economies, leading to the development of cities. 
+            </p>
+            <div class="EH-GALLERY">
+              <img src="../student_4/gallery/The Art and Science of Agriculture1.jpg" alt="theartandscienceofagriculture1">
+              <img src="../student_4/gallery/The Art and Science of Agriculture2.jpeg" alt="theartandscienceofagriculture2">
+              <img src="../student_4/gallery/The Art and Science of Agriculture3.jpeg" alt="theartandscienceofagriculture3">
+            </div>
+          </div>
+        </div>
+
+
+        <div id="EHArtAgriculture" class="EHdetails">
+          <div class="EH">
+            <h1 class="EH-HEADER">Roots of Sustainability</h1>
+            <p class="EH-pack">
+              Farmers markets are becoming gathering places for those who support locally and sustainably produced food as the locavore movement gains traction in the US. Rather than depending on packaged items shipped from far-off places, this movement promotes eating food and other goods supplied from local farms and communities. People who shop at farmers markets not only enjoy fresh, seasonal food, but they also help create a more sustainable and community-focused food system.
+            </p>
+            <div class="EH-GALLERY">
+              <img src="../student_4/gallery/Roots of Sustainability1.webp" alt="rootsofsustainability1">
+              <img src="../student_4/gallery/Roots of Sustainability2.jpg" alt="rootsofsustainability2">
+              <img src="../student_4/gallery/Roots of Sustainability3.webp" alt="rootsofsustainability3">
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ///////////////////////////////////////gallery-modal/////////////////////////////////////////////////////////////////////////////// -->
+      <!-- Gallery -->
+      <div class="gallerymodal">
+        <img src="../student_4/gallery/1.png" alt="Number of accessions of plant genetic resources secured in conservation facilities" onclick="openModal(this, this.alt)" >
+        <img src="../student_4/gallery/4.png" alt="Sisal plantations in the outskirts of Morogoro, Tanzania" onclick="openModal(this, this.alt)" >
+        <img src="../student_4/gallery/3.jpeg" alt="Kenyan health worker weighs a young Kenyan boy to determine if he is malnourished" onclick="openModal(this, this.alt)" >
+        <img src="../student_4/gallery/2.png" alt="Share of children with a weight too low for their height (wasting)" onclick="openModal(this, this.alt)" >
+        <img src="../student_4/gallery/5.jpg" alt="60 percent of the world’s hungry people live in zones affected by conflict" onclick="openModal(this, this.alt)" >
+        <img src="../student_4/gallery/6.png" alt="Javanese women performing manual labor during rice plantation in Indonesia" onclick="openModal(this, this.alt)" >
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <!-- <img src="#" id="modalImg"> -->
+            <img src="#" id="modalImg" alt="Placeholder image">
+            <div id="caption"></div>
+          </div>
+        </div>
+      </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <footer>
+        <div class="footer">
+          <div class="row">
+              <a id="facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+              <a id="instagrame" href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+              <a id="whatsapp" href="https://wa.me"><i class="fa fa-whatsapp"></i></a>
+              <a id="linkedin" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+          </div>
+      
+          <div class="row">
+              <ul>
+                  <li><a href="#">Back to TOP</a></li>
+                  <li><a href="#">Contact us </a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="../student_4/Page_editor_4.html">Editors page</a></li>
+              </ul>
+          </div>
+      
+          <div class="row">
+              End Hunger Copyright © 2024 End Hunger - All rights reserved || Designed By: End Hunger Teams.
+          </div>
+      </div>
+      
+      </footer>
+
+      <script src="gallery.js"></script>
+
+  </body>
+</html>
