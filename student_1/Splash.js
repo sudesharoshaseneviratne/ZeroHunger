@@ -7,6 +7,6 @@ var seconds=5
             setInterval(displaySeconds,1000)
             function redirectpage()
             {
-                window.location="../student_2/Home.html"
+                window.location="../index.html"
             }
             setTimeout ("redirectpage()",5000)
